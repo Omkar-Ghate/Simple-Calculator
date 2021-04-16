@@ -5,13 +5,19 @@ body{
 #container{
 	width: 1000px;
 	height: 550px;
-	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bgImg.jpg);
+	background-image: url(bg.jpg);
+	background-repeat:no-repeat;
 	margin: 20px auto;	
+}
+#container img{
+	position: absolute;
+	width: 1000px;
+	height: 550px;
 }
 #calculator{
 	width: 320px;
 	height: 520px;
-	background-color: #eaedef;
+	background: linear-gradient(45deg,#053a5a, #2d0c02);
 	margin: 0 auto;
 	top: 20px;
 	position: relative;
@@ -19,6 +25,7 @@ body{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #result{
+	color: white;
 	height: 120px;
 }
 #history{
@@ -47,6 +54,12 @@ body{
 	border-width: 0;
 	font-weight: bold;
 	font-size: 15px;
+	opacity: 0.6;
+  	transition: 0.3s;
+}
+.operator:hover, .number:hover, .empty:hover{
+	 
+	opacity:1;
 }
 .number, .empty{
 	background-color: #eaedef;
