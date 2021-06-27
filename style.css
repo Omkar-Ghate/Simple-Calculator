@@ -1,19 +1,28 @@
-html {
+
+* {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Open Sans',sans-serif;
-    background-image: url(bg.jpg);
-    background-repeat: no-repeat;
 }
 
-body {
+.outerContainer{
+    background: url('./bg.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+}
+
+/* body {
     position: absolute;
     left: 50%;
     top: 46%;
     transform: translate(-50%, -50%);
-}
+} */
 
-#container {
+/* #container {
     margin: 20px auto;
-}
+} */
 
 #container img {
     position: absolute;
@@ -24,9 +33,9 @@ body {
 #calculator {
     width: 480px;
     height: 715px;
-    background: linear-gradient(45deg,#053a5a, #2d0c02);
-    margin: 0 auto;
-    top: 20px;
+    background: linear-gradient(45deg,#2e6687, #215c46);
+    margin: auto;
+    top: 25vh;
     position: relative;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

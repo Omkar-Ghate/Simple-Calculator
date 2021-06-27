@@ -72,7 +72,8 @@ for(var i =0;i<number.length;i++){
 		var output=reverseNumberFormat(getOutput());
 		if(output!=NaN){ //if output is a number
 			output=output+this.id;
-			printOutput(output);
+			printOutput(outpuit);
 		}
+		
 	});
 }
